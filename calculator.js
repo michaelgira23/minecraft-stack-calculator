@@ -26,7 +26,7 @@ var app = new Vue({
 		},
 		singleChests: {
 			get: function() {
-				return this.items / (stacksInSingleChest * stackNumber);
+				return +(this.items / (stacksInSingleChest * stackNumber)).toFixed(2);
 			},
 			set: function(value) {
 				this.items = value * stacksInSingleChest * stackNumber;
@@ -34,7 +34,7 @@ var app = new Vue({
 		},
 		doubleChests: {
 			get: function() {
-				return this.items / (stacksInDoubleChest * stackNumber);
+				return +(this.items / (stacksInDoubleChest * stackNumber)).toFixed(2);
 			},
 			set: function(value) {
 				this.items = value * stacksInDoubleChest * stackNumber;

@@ -3,21 +3,26 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
 		<div id="app">
 			<h1>{{ items }} Items</h1>
 			<input class="calculate-amount" v-model:value="items"></input>
+			items
 			=
 			<input class="calculate-stacks" v-model:value="stacks"></input>
 			stacks +
 			<input class="calculate-remainder" v-model:value="remaining"></input>
-			=
-			<input class="calculate-double-chests" v-model:value="doubleChests"></input>
-			double chests
+			remaining
 			=
 			<input class="calculate-single-chests" v-model:value="singleChests"></input>
 			single chests
+			=
+			<input class="calculate-double-chests" v-model:value="doubleChests"></input>
+			double chests
 		</div>
 
 		<script src="https://unpkg.com/vue/dist/vue.min.js"></script>
